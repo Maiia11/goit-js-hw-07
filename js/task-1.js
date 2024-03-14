@@ -13,3 +13,4 @@ function ShowCategoryInfo(event) {
     console.log(`Category: ${categoryTitle}`);
     console.log(`Elements: ${categoryElements}`);
 }
+
