@@ -1,10 +1,10 @@
-const div = document.querySelector(".widget");
+const bodyEl = document.querySelector("body");
 const butn = document.querySelector(".change-color");
 const span = document.querySelector(".color")
 butn.addEventListener("click", handleClick);
 function handleClick() {
-  span.textContent = getRandomHexColor();
-  div.style.backgroundColor = getRandomHexColor();
+  bodyEl.style.backgroundColor = getRandomHexColor();
+  span.textContent = bodyEl.style.backgroundColor;
   return
 }
 
@@ -13,3 +13,4 @@ function getRandomHexColor() {
     .toString(16)
     .padStart(6, 0)}`;
 }
+
