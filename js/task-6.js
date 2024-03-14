@@ -12,6 +12,8 @@ function handleClick() {
   if (input.value < 0 || input.value > 100) {
     return;
   }
+width = 30;
+ height = 30
   createBoxes(input.value)
 }
 

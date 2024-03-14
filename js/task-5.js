@@ -1,10 +1,10 @@
 const bodyEl = document.querySelector("body");
-const butn = document.querySelector(".change-color");
-const span = document.querySelector(".color")
-butn.addEventListener("click", handleClick);
+const butnEl = document.querySelector(".change-color");
+const spanEl = document.querySelector(".color")
+butnEl.addEventListener("click", handleClick);
 function handleClick() {
   bodyEl.style.backgroundColor = getRandomHexColor();
-  span.textContent = bodyEl.style.backgroundColor;
+  spanEl.textContent = bodyEl.style.backgroundColor;
   return
 }
 
