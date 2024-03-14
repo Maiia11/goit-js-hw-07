@@ -12,6 +12,7 @@ function handleSubmit(event) {
         password: ourElements.password.value.trim()
         }
         console.log(info);
+        event.target.reset();
     }
-    event.target.reset();
+    
 }
