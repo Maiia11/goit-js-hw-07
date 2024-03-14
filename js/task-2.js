@@ -28,15 +28,20 @@ const images = [
   },
 ];
 
-images.forEach(img => {
-const list = document.createElement("li");
-const imgEl = document.createElement("img");
-imgEl.src = img.url;
-imgEl.alt = img.alt
-list.append(imgEl);
 const ulEl = document.querySelector(".gallery");
-ulEl.append(list);
- 
-})
+
+function createGallery(arr) {
+  return arr
+    .map(({ url, alt }) =>
+      `<li>
+      <img src="${url}" alt="${alt}"/>
+      </li>`
+    )
+    .join("");
+  
+}
+
+ulEl.insertAdjacentHTML("beforeend", createGallery(images));
+
 
 
