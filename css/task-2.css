@@ -1,0 +1,19 @@
+ul {
+list-style-type: none;
+}
+.gallery {
+display: flex;
+flex-direction: row;
+gap:60px 24px;
+flex-wrap: wrap;
+} 
+
+img {
+width: 360px;
+height: 300px;
+ object-fit: cover;
+
+}
+
+
+    
