@@ -5,7 +5,7 @@ inputEl.addEventListener("input", handleInput)
 function handleInput(event) {
     const name = event.currentTarget.value.trim();
     if (name === "") {
-        spanEl.textContent = `Anonymus`;
+        spanEl.textContent = `Anonymous`;
         return
     }
     spanEl.textContent = name;
