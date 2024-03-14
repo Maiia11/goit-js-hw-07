@@ -23,6 +23,7 @@ input {
     border-radius: 4px;
     width: 360px;
     height: 40px;
+    
 }
 
 button{
@@ -43,4 +44,8 @@ button{
 
 button:hover{
     background-color:  #6c8cff;
+}
+
+input:hover {
+    border-color: black;
 }
