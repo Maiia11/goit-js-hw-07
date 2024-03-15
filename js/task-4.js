@@ -3,7 +3,7 @@ form.addEventListener("submit", handleSubmit);
 
 function handleSubmit(event) {
     event.preventDefault();
-    if (event.target.elements.email.value === " " || event.target.elements.password.value === "") {
+    if (event.target.elements.email.value.trim() === " " || event.target.elements.password.value.trim() === "") {
         alert('All form fields must be filled in');
     } else {
         const ourElements = event.target.elements;
